@@ -1,0 +1,497 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!-- saved from url=(0052)https://www.w3.org/Style/Examples/007/center.ru.html -->
+<html lang="ru"><head profile="http://www.w3.org/2006/03/hcard"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>CSS: выравнивание по центру</title>
+
+  
+  <meta content="width=device-width" name="viewport">
+  <link href="./CSS_ выравнивание по центру_files/main" media="screen, handheld, projection, tv" rel="stylesheet" title="Main">
+  <link href="https://www.w3.org/Style/CSS/floatspan-n" media="screen, handheld, projection, tv" rel="alternate stylesheet" title="Cascade">
+  <link href="https://www.w3.org/Style/CSS/daily-color" media="screen, handheld, projection, tv" rel="alternate stylesheet" title="Cascade">
+  <link href="https://www.w3.org/Style/CSS/floatspan" media="screen, handheld, projection, tv" rel="alternate stylesheet" title="Cascade (older browsers)">
+  <link href="https://www.w3.org/Style/CSS/daily-color" media="screen, handheld, projection, tv" rel="alternate stylesheet" title="Cascade (older browsers)">
+  <link href="https://www.w3.org/Style/CSS/asymmetric" media="screen, handheld, projection, tv" rel="alternate stylesheet" title="Asymmetric">
+  <link href="https://www.w3.org/Style/CSS/draft" media="screen, projection, tv" rel="alternate stylesheet" title="Draft 3">
+  <link href="https://www.w3.org/Style/CSS/draft-rg" media="screen, projection, tv" rel="alternate stylesheet" title="Draft 2">
+  <link href="./CSS_ выравнивание по центру_files/twocolumn-print" media="print" rel="stylesheet">
+  <link href="https://www.w3.org/" rel="home" title="W3C">
+  <link href="https://www.w3.org/Style/CSS/" rel="top" title="CSS">
+  <link href="https://www.w3.org/Style/CSS/current-work" rel="chapter" title="Roadmap">
+  <link href="https://www.w3.org/Style/Examples/007/" rel="chapter" title="Examples">
+  <link href="https://www.w3.org/Consortium/activities" rel="bookmark" title="Activities">
+  <link href="https://www.w3.org/TR/" rel="bookmark" title="Tech. reports">
+  <link href="https://www.w3.org/Consortium/Translation/" rel="bookmark" title="Translations">
+  <link href="https://www.w3.org/Status" rel="bookmark" title="Software">
+  <link href="https://www.w3.org/Consortium/siteindex" rel="index" title="Site index">
+  <link href="https://www.w3.org/Help/search" rel="search" title="Search">
+  <link href="https://www.w3.org/Consortium/Legal/ipr-notice.html#Copyright" rel="copyright" title="Copyright">
+  <link href="https://www.w3.org/Style/Examples/007/center.ru.html" rel="canonical">
+  <style type="text/css">
+  div.example {border: #603 dotted; padding: 0.5em; margin: 1em 2em}
+  p.blocktext {margin: 1em auto; width: 8em; text-align: left}
+  img.displayed {display: block; margin-left: auto; margin-right: auto}
+  div.container {height: 10em; display: table-cell; vertical-align: middle}
+  div.container p {margin: 0}
+  div.container3 {height: 10em; position: relative}
+  div.container3 p {margin: 0; position: absolute; top: 50%;
+   transform: translate(0, -50%)}
+  div.container5 {height: 10em; display: flex; align-items: center}
+  div.container5 p {margin: 0}
+  div.container4 {height: 10em; position: relative}
+  div.container4 p {margin: 0; position: absolute; background: yellow;
+   top: 50%; left: 50%; transform: translate(-50%, -50%)}
+  div.container6 {height: 10em; display: flex; align-items: center;
+   justify-content: center}
+  div.container6 p {margin: 0; background: yellow}</pre>
+  </style>
+  <link href="http://www.carionltd.com/Style/Example007/center.html" hreflang="az" rel="alternate" title="Azərbaycan">
+  <link href="http://dichev.com/Style/Examples/007/center/" hreflang="bg" rel="alternate" title="Български">
+  <link href="http://www.ich-lerne-css.de/Style/Examples/007/center.html" hreflang="de" rel="alternate" title="Deutsch">
+  <link href="http://www.greekcom.org/Style/Examples/007/center.htm" hreflang="el" rel="alternate" title="Ελληνικά">
+  <link href="https://www.w3.org/Style/Examples/007/center.en.html" hreflang="en" rel="alternate" title="English">
+  <link href="http://www.spanish-translator-services.com/espanol/t/007/center.html" hreflang="es" rel="alternate" title="Español">
+  <link href="https://www.w3.org/Style/Examples/007/center.fr.html" hreflang="fr" rel="alternate" title="Français">
+  <link href="http://www.erasparsa.com/w3/Style/Examples/007/center/" hreflang="id" rel="alternate" title="Bahasa Indonesia">
+  <link href="http://www.bjornenki.com/articles/w3_style_examples_007_center" hreflang="nb" rel="alternate" title="Norsk">
+  <link href="https://www.w3.org/Style/Examples/007/center.nl.html" hreflang="nl" rel="alternate" title="Nederlands">
+  <link href="https://www.w3.org/Style/Examples/007/center.pl.html" hreflang="pl" rel="alternate" title="Polski [2017-08-01]">
+  <link href="http://www.internetbootcamp.net/007/center.html" hreflang="pt" rel="alternate" title="Português">
+  <link href="https://www.w3.org/Style/Examples/007/center.pt_BR.html" hreflang="pt-br" rel="alternate" title="Português brasileiro">
+  <link href="https://www.w3.org/Style/Examples/007/center.ru.html" hreflang="ru" rel="alternate" title="Русский [2017-08-22]">
+  <link href="http://www.codingbasic.com/style/example/007/center.html" hreflang="th" rel="alternate" title="ไทย">
+  <link href="http://tl.tz8.de/style-examples-007-center.html" hreflang="tl" rel="alternate" title="Tagalog">
+  <link href="https://www.w3.org/Style/Examples/007/center.uk.html" hreflang="uk" rel="alternate" title="Українська [2017-08-22]">
+  <link href="http://www.300yards.com/007/center.html" hreflang="vi" rel="alternate" title="Tiếng Việt">
+  <link href="https://www.w3.org/Style/Examples/007/center.zh_CN.html" hreflang="zh-cn" rel="alternate" title="简体中文 [2016-11-29]">
+  <link href="https://www.w3.org/Style/Examples/007/center.zh_HK.html" hreflang="zh-hk" rel="alternate" title="繁體中文 [2016-11-29]">
+  <link href="https://www.w3.org/Style/Examples/007/Overview.en" rel="up" title="CSS: tips &amp; tricks">
+  <link href="https://www.w3.org/Style/Examples/007/figures.ru" rel="first" title="CSS: иллюстрации &amp; подписи">
+  <link href="https://www.w3.org/Style/Examples/007/fonts.ru" rel="prev" title="CSS: шрифты">
+  <link href="https://www.w3.org/Style/Examples/007/shadows.ru" rel="next" title="CSS: тени">
+  <link href="https://www.w3.org/Style/Examples/007/sliding.en" rel="last" title="CSS: a sliding menu">
+
+ </head><body>
+  <div class="section" id="language">
+   <p><a href="https://www.w3.org/Style/Examples/007/center.ru.html#translations">Языки</a>
+
+   </p><p>Это перевод. Здесь могут содержаться ошибки или страница может
+    быть устаревшей по отношению к <a href="https://www.w3.org/Style/Examples/007/center.en.html" hreflang="en" rel="alternate">Английской версии.</a> Переводчик: <a href="https://neighbor.report/">Евгений (neighbor report)</a>
+  </p></div>
+
+  <h1><em>Каскадные таблицы стилей</em> CSS советы &amp; приёмы</h1>
+
+  <div class="section" id="intro">
+   <p>Смотрите также <a href="https://www.w3.org/Style/Examples/007/">указатель</a> всех приёмов работы.
+  </p></div>
+
+  <div class="section" id="centering">
+   <h2>Центрирование</h2>
+
+   <p>Общая функция CSS — центрирование текста или изображения.
+    Фактически, существует три вида центрирования:
+
+   </p><ul>
+    <li><a href="https://www.w3.org/Style/Examples/007/center.ru.html#text">Центрирование строк текста</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.ru.html#block">Центрирование текстового блока или
+     изображения</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.ru.html#vertical">Центрирование текстового блока или
+     изображения по вертикали</a>
+   </li></ul>
+
+   <p>В последних реализациях CSS вы можете также использовать
+    возможности Уровня 3 (CSS3), позволяющие выровнять по центру
+    абсолютно позиционированные элементы:
+
+   </p><ul>
+    <li><a href="https://www.w3.org/Style/Examples/007/center.ru.html#vertical3">Выравнивание по вертикали в уровне 3</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.ru.html#hv3">Выравнивание по вертикали и горизонтали в
+     уровне 3</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.ru.html#viewport3">Выравнивание в области просмотра в
+     уровне 3</a>
+   </li></ul>
+  </div>
+
+  <div class="section" id="text">
+   <h2>Центрирование строк текста</h2>
+
+   <p>Самый распространённый и (потому) самый лёгкий тип центрирования
+    — это центрирование строк текста в абзаце или заголовке. Для этого
+    CSS обладает свойством 'text-align':
+
+   </p><pre>P { text-align: center }
+H2 { text-align: center }</pre>
+
+   <p>которое отображает каждую строку в абзаце P или заголовке H2 по
+    центру между полями, вот так:
+
+   </p><div class="example">
+    <p style="text-align: center">Все строки в этом абзаце выровнены
+     по центру полями абзаца. Это стало возможным благодаря значению
+     'center' свойства CSS 'text-align'.
+   </p></div>
+  </div>
+
+  <div class="section" id="block">
+   <h2>Центрирование блока или изображения</h2>
+
+   <p>Иногда центрировать нужно не текст, а блок в целом. Или,
+    по-другому говоря: мы хотим, чтобы правое и левое поля были
+    одинаковыми. Для этого нужно установить поля на 'auto'. Это обычно
+    используется для блоков с фиксированной шириной, потому что если
+    блок сам по себе гибкий, он просто займёт всю доступную ширину. Вот
+    пример:
+
+   </p><pre>P.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em
+}
+...
+&lt;P class="blocktext"&gt;Этот довольно ...</pre>
+
+   <div class="example">
+    <p class="blocktext">Этот довольно узкий блок текста центрирован.
+     Заметьте, что строки внутри блока не центрированы (они выровнены
+     влево), в отличие от предыдущего примера.
+   </p></div>
+
+   <p>Этот метод также можно использовать для центрирования
+    изображения: поместите его в собственный блок и примените свойства
+    полей. Например:
+
+   </p><pre>IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+...
+&lt;IMG class="displayed" src="..." alt="..."&gt;</pre>
+
+   <div class="example">
+    <p>Следующее изображение центрировано: <img alt="some random image" class="displayed" src="./CSS_ выравнивание по центру_files/woolly-mc.png">
+   </p></div>
+  </div>
+
+  <div class="section" id="vertical">
+   <h2>Вертикальное центрирование</h2>
+
+   <p>CSS уровня&nbsp;2 не обладает свойством вертикального центрирования.
+    Вероятно, оно появится в версии CSS уровня&nbsp;3 (см. <a href="https://www.w3.org/Style/Examples/007/center.ru.html#vertical3" title="Centering vertically in level 3">ниже</a>). Но даже в CSS2 вы можете центрировать блоки вертикально при
+    помощи комбинирования нескольких свойств. Хитрость заключается в
+    том, чтобы указать, что внешний блок должен быть отформатирован как
+    ячейка таблицы, т.к. содержимое ячейки таблицы <em>может</em>
+    быть выровнено по центру вертикально.
+
+   </p><p>Пример, приведенный ниже, демонстрирует центрирование абзаца
+    внутри блока, который имеет определенную заданную высоту. <a href="https://www.w3.org/Style/Examples/007/center-example">Отдельный пример</a> показывает абзац,
+    который центрирован вертикально в окне браузера, потому что
+    находится внутри блока, позиционированного абсолютно и по высоте
+    окна.
+
+   </p><pre>DIV.container {
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle }
+...
+&lt;DIV class="container"&gt;
+  &lt;P&gt;Этот маленький абзац...
+&lt;/DIV&gt;</pre>
+
+   <div class="example">
+    <div class="container">
+     <p>Этот маленький абзац центрирован вертикально.
+    </p></div>
+   </div>
+  </div>
+
+  <div class="section" id="vertical3">
+   <h2>Центрирование по вертикали в CSS уровня 3</h2>
+
+   <p>Уровень 3 CSS предлагает и другие возможности. На момент
+    написания этой статьи (2014 год), хороший способ вертикального
+    выравнивания блока без использования абсолютного позиционирования
+    (что может приводить к частичному перекрытию текста) всё ещё
+    обсуждается. Но если вам известно, что частичное перекрытие текста
+    не станет проблемой в вашем документе, вы можете использовать
+    свойство 'transform', чтобы выровнять по центру абсолютно
+    позиционированный элемент. Например:
+
+   </p><div class="example">
+    <div class="container3">
+     <p>Этот абзац выровнен вертикально по центру.
+    </p></div>
+   </div>
+
+   <p>Для документа, который выглядит вот так:
+
+   </p><pre>&lt;div class=container3&gt;
+  &lt;p&gt;Этот абзац…
+&lt;/div&gt;</pre>
+
+   <p>таблица стилей выглядит так:
+
+   </p><pre>div.container3 {
+   height: 10em;
+   <b>position: relative</b> }              /* 1 */
+div.container3 p {
+   margin: 0;
+   <b>position: absolute;</b>               /* 2 */
+   <b>top: 50%;</b>                         /* 3 */
+   <b>transform: translate(0, -50%)</b> }   /* 4 */</pre>
+
+   <p>Основные правила:
+
+   </p><ol>
+    <li> Сделайте контейнер <em>относительно позиционированным</em>
+     (position: relative), что превратит его в контейнер для абсолютно
+     позиционированных элементов.
+
+    </li><li> Сам элемент сделайте <em>абсолютно позиционированным</em>
+     (position: absolute).
+
+    </li><li> Поместите элемент посередине контейнера с помощью 'top: 50%'.
+     (Заметьте, что '50%' здесь означают 50% высоты контейнера.)
+
+    </li><li> Используйте translate, чтобы переместить элемент вверх на
+     половину своей собственной высоты. ( '50%' в 'translate(0, -50%)'
+     указывают на высоту самого элемента.)
+   </li></ol>
+
+   <p>Недавно (начиная приблизительно с 2015-го года) в нескольких
+    реализациях CSS стала доступна новая техника. Она основана на новом
+    ключевом слове 'flex' для свойства 'display'. Это ключевое слово
+    предназначено для использования в графическом интерфейсе
+    пользователя (GUI), но ничто не мешает вам использовать его в
+    документе, если у этого документа правильная структура.
+
+   </p><div class="example">
+    <div class="container5">
+     <p>Этот абзац выровнен по центру вертикально.
+    </p></div>
+   </div>
+
+   <p>таблица стилей выглядит следующим образом:
+
+   </p><pre>div.container5 {
+  height: 10em;
+  <b>display: flex;</b>
+  <b>align-items: center</b> }
+div.container5 p {
+  margin: 0 }</pre>
+  </div>
+
+  <div class="section" id="hv3">
+   <h2>Вертикальное и горизонтальное центрирование в CSS уровня 3</h2>
+
+   <p>Мы можем расширить оба метода, чтобы центрировать по горизонтали
+    и по вертикали одновременно.
+
+   </p><p>Побочный эффект абсолютного позиционирования абзаца состоит в
+    том, что абзац становится ровно таким широким, каким он должен быть
+    (если только мы явно не укажем ширину). В примере ниже мы именно
+    этого и хотим: мы размещаем по центру абзац из одного слова
+    (“Центр!“), так что ширина абзаца должна быть равна ширине этого
+    слова.
+
+   </p><div class="example">
+    <div class="container4">
+     <p>Центр!
+    </p></div>
+   </div>
+
+   <p>Жёлтый фон наглядно демонстрирует, что абзац действительно той
+    же ширины, что и его содержимое. Мы подразумеваем, что разметка
+    осталась прежней:
+
+   </p><pre>&lt;div class=container4&gt;
+  &lt;p&gt;Центр!
+&lt;/div&gt;</pre>
+
+   <p>В плане вертикального центрирования эта таблица стилей схожа с
+    таблицей из предыдущего примера. Но теперь мы ещё перемещаем
+    элемент на полпути через контейнер с помощью правила 'left: 50%' и
+    одновременно сдвигаем его влево на половину своей собственной
+    ширины в преобразовании 'translate':
+
+   </p><pre>div.container4 {
+    height: 10em;
+    position: relative }
+div.container4 p {
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    <b>left: 50%;</b>
+    <b>margin-right: -50%;</b>
+    transform: translate(<b>-50%,</b> -50%) }</pre>
+
+   <p>Следующий пример объясняет, зачем требуется правило
+    'margin-right: -50%'.
+
+   </p><p>Когда форматер CSS поддерживает 'flex', всё становится ещё
+    легче:
+
+   </p><div class="example">
+    <div class="container6">
+     <p>Центр!
+    </p></div>
+   </div>
+
+   <p>с этой таблицей стилей:
+
+   </p><pre>div.container6 {
+  height: 10em;
+  display: flex;
+  align-items: center;
+  <b>justify-content: center</b> }
+div.container6 p {
+  margin: 0 }</pre>
+
+   <p>т.е. единственным дополнением является 'justify-content:
+    center'. Точно также, как 'align-items' определяет вертикальное
+    выравнивание содержимого контейнера, 'justify-content' таким же
+    образом определяет горизонтальное выравнивание. (На самом деле всё
+    несколько сложнее, как следует из их названий, но в простом случае,
+    работает это именно так.). Побочный эффект от применения свойства
+    'flex' состоит в том, что дочерний элемент, в нашем случае это Р,
+    автоматически становится настолько малым, насколько это возможно.
+  </p></div>
+
+  <div class="section" id="viewport3">
+   <h2>Центрирование в области просмотра в CSS уровня 3</h2>
+
+   <p>Контейнером по умолчанию для абсолютно позиционированных
+    элементов является область просмотра. (В случае c браузером это
+    окно браузера). Таким образом, центрирование элемента в области
+    просмотра не вызывает сложности. Далее приведен полный пример. (В
+    этом примере использован синтаксис HTML5.)
+
+   </p><pre>&lt;html&gt;
+  &lt;style&gt;
+    body {
+        background: white }
+    section {
+        background: black;
+        color: white;
+        border-radius: 1em;
+        padding: 1em;
+        <b>position: absolute;</b>
+        <b>top: 50%;</b>
+        <b>left: 50%;</b>
+        <b>margin-right: -50%;</b>
+        <b>transform: translate(-50%, -50%)</b> }
+  &lt;/style&gt;
+  &lt;section&gt;
+    &lt;h1&gt;Красиво выровнен по центру&lt;/h1&gt;
+    &lt;p&gt;Этот текстовый блок выровнен вертикально по центру.
+    &lt;p&gt;И горизонтально, если окно достаточно широкое.
+  &lt;/section&gt;</pre>
+
+   <p>Вы можете увидеть результат в <a href="https://www.w3.org/Style/Examples/007/center-example2">отдельном
+    документе.</a>
+
+   </p><p>Правило 'margin-right: -50%' необходимо для компенсации 'left:
+    50%'. Правило 'left' уменьшает доступную для элемента ширину на
+    50%. Поэтому визуализатор постарается сделать линии длиною не более
+    половины ширины контейнера. Указав на то, что правое поле элемента
+    находится правее на ту же самую величину, отметим, что максимальная
+    длина линии снова равняется ширине контейнера.
+
+   </p><p>Попробуйте изменить размер окна: вы увидите, что каждое
+    предложение находится на одной строке, когда окно достаточно
+    широкое. Только тогда, когда окно слишком узкое для всего
+    предложения, это предложение будет разбито на несколько строк.
+    Когда вы удалите правило 'margin-right: -50%' и снова измените
+    размер окна, вы заметите, что предложения будут уже разбиты, хотя
+    окно все еще шире строк текста в два раза.
+
+   </p><p>(Использование свойства 'translate' для центрирования в области
+    просмотра было впервые предложено “Charlie” в <a href="http://stackoverflow.com/questions/5412912/align-vertically-using-css-3/16026893#answer-16026893">ответе на сайте Stack Overflow.</a>)
+  </p></div>
+
+  <div class="section" id="banner">
+   <h2>Навигация по сайту</h2>
+
+   <form action="https://www.w3.org/Help/search">
+    <ul>
+     <li class="home"><a href="https://www.w3.org/" rel="home"><img alt="W3C" src="./CSS_ выравнивание по центру_files/w3c_home"></a>
+
+     </li><li><a href="https://www.w3.org/Style/CSS/">Главная CSS</a>
+
+     </li><li><a href="https://www.w3.org/Style/CSS/learning">Изучение и использование</a>
+
+     </li><li><a href="https://www.w3.org/Style/CSS/software">Программы</a>
+
+     </li><li><a href="https://www.w3.org/Style/CSS/current-work" title="Участие в развитии стандарта CSS">Участие / <span title="Все спецификации и черновики">черновики</span></a>
+
+     </li><li class="search"><input accesskey="E" id="inputField" maxlength="255" name="q" size="10"><button accesskey="G" name="sa" type="submit"><img alt="Поиск" src="./CSS_ выравнивание по центру_files/search-button" title="Поиск"></button>
+    </li></ul>
+   </form>
+  </div>
+
+  <div class="section" id="endmatter">
+   <address class="vcard h-card"><img alt="" class="photo u-photo" src="./CSS_ выравнивание по центру_files/bert3-small.jpg"> <a class="fn url p-name u-url" href="https://www.w3.org/People/Bos/">Bert
+    Bos</a>, <span class="role p-role">style activity lead</span><br>
+    <small><a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright" rel="copyright">Copyright</a> © <!--@@@-->1994–2018<!--/@@@--> <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup></a></small> <a href="https://www.w3.org/Consortium/Legal/ipr-notice">Privacy policy</a></address>
+
+   <p>Created 5 May 2001;<br>
+    Last updated <!--@@@-->Ср 26 сен 2018 04:41:21<!--/@@@-->
+  </p></div>
+
+  <div class="section" id="translations">
+   <h2>Языки</h2>
+
+   <ul>
+    <li><a href="http://www.carionltd.com/Style/Example007/center.html" hreflang="az" rel="alternate">Azərbaycan</a>
+
+    </li><li><a href="http://dichev.com/Style/Examples/007/center/" hreflang="bg" rel="alternate">Български</a>
+
+    </li><li><a href="http://www.ich-lerne-css.de/Style/Examples/007/center.html" hreflang="de" rel="alternate">Deutsch</a>
+
+    </li><li><a href="http://www.greekcom.org/Style/Examples/007/center.htm" hreflang="el" rel="alternate">Ελληνικά</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.en.html" hreflang="en" rel="alternate">English</a>
+
+    </li><li><a href="http://www.spanish-translator-services.com/espanol/t/007/center.html" hreflang="es" rel="alternate">Español</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.fr.html" hreflang="fr" rel="alternate">Français</a>
+
+    </li><li><a href="http://www.erasparsa.com/w3/Style/Examples/007/center/" hreflang="id" rel="alternate">Bahasa Indonesia</a>
+
+    </li><li><a href="http://www.bjornenki.com/articles/w3_style_examples_007_center" hreflang="nb" rel="alternate">Norsk</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.nl.html" hreflang="nl" rel="alternate">Nederlands</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.pl.html" hreflang="pl" rel="alternate" title="2017-08-01">Polski</a>
+
+    </li><li><a href="http://www.internetbootcamp.net/007/center.html" hreflang="pt" rel="alternate">Português</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.pt_BR.html" hreflang="pt-br" rel="alternate">Português brasileiro</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.ru.html" hreflang="ru" rel="alternate" title="2017-08-22">Русский</a>
+
+    </li><li><a href="http://www.codingbasic.com/style/example/007/center.html" hreflang="th" rel="alternate">ไทย</a>
+
+    </li><li><a href="http://tl.tz8.de/style-examples-007-center.html" hreflang="tl" rel="alternate">Tagalog</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.uk.html" hreflang="uk" rel="alternate" title="2017-08-22">Українська</a>
+
+    </li><li><a href="http://www.300yards.com/007/center.html" hreflang="vi" rel="alternate">Tiếng Việt</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.zh_CN.html" hreflang="zh-cn" rel="alternate" title="2016-11-29">简体中文</a>
+
+    </li><li><a href="https://www.w3.org/Style/Examples/007/center.zh_HK.html" hreflang="zh-hk" rel="alternate" title="2016-11-29">繁體中文</a>
+   </li></ul>
+
+   <p><a href="https://www.w3.org/Style/CSS/translating">О переводах</a>
+  </p></div>
+<!-- Keep this comment at the end of the file
+Local variables:
+mode: sgml
+sgml-indent-step:1
+End:
+-->
+</body></html>

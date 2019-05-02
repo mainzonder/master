@@ -1,0 +1,30 @@
+.logper-g{
+	 font-size:medium;
+margin:0 auto;
+
+}	
+.zero-f{
+    font-size: 1%;
+}
+
+.gri-r{
+    font-size: larger;
+    border: 1px solid #000;
+    text-align: center;
+    float: right ;
+    background-color:sandybrown;
+    padding: 5px;
+    margin-bottom: 10px;
+ }
+
+ .gri-l{
+    margin:0 auto;
+     width: 75%;
+    font-size: larger;
+    border: 1px solid #000;
+    text-align: center;
+ 
+    background-color:sandybrown;
+    padding: 5px;
+  
+ }
