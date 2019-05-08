@@ -358,6 +358,9 @@ display:inline-block;
     border-radius: 5px;
     display: block;
     padding: 5px;
+	width: 85%;
+ text-align: center;
+ margin: 5px auto;
 }
 
 .cube {
@@ -367,7 +370,7 @@ display:inline-block;
     border: #0198fc solid 2px;
     padding: 5px;
     margin: 2px;
-    background-color: #0ff;
+   /* background-color: #0ff;*/
 }
 
 .cube img {
@@ -815,6 +818,36 @@ a.knopka1:active {
 }
 
 
+
+a.knopka2 {
+    color: #fff;
+    /* цвет текста */
+    text-decoration: none;
+    /* убирать подчёркивание у ссылок */
+    user-select: none;
+    /* убирать выделение текста */
+    background: #327A1F;
+    /* фон кнопки */
+    padding: .7em 1.5em;
+    /* отступ от текста */
+    outline: none;
+    /* убирать контур в Mozilla */
+	display:inline-block;
+	
+}
+
+a.knopka2:hover {
+    background: #549C48;
+}
+
+
+/* при наведении курсора мышки */
+
+a.knopka2:active {
+    background:  	#196107;
+}
+
+
 /* при нажатии */
 
 
@@ -992,7 +1025,7 @@ a.knopka1:active {
     border-radius: 2px;
     color: #FFFFFF;
     padding: 0.4em;
-    font-size: 1.22rem;
+    font-size: 1.2rem;
     letter-spacing: .05px;
     text-align: center;
     display: block;
@@ -1050,4 +1083,4 @@ a.rollover:hover {
 <a href="#" class="rollover"></a>
 </p> -->
 
-*
+*/
